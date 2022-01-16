@@ -1,0 +1,134 @@
+.loginWrapper {
+  text-align: center;
+  font-family: "Poppins";
+  background-color: #1f4e79;
+  min-height: 100vh;
+  padding: 1rem 0 3rem 0;
+  .logoDiv {
+    padding: 1rem 0;
+    .logoImage {
+      width: 18%;
+      @media (max-width: 1024px) {
+        width: 35%;
+      }
+      @media (max-width: 600px) {
+        width: 50%;
+      }
+    }
+  }
+  .formDiv {
+    margin: 1rem auto;
+    width: 30%;
+    background-color: whitesmoke;
+    padding: 1.5rem 2rem 0.5rem 2rem;
+    border-radius: 5px;
+    @media (max-width: 1024px) {
+      width: 55%;
+    }
+    @media (max-width: 600px) {
+      width: 70%;
+    }
+    // text-align: left;
+    .formHeader {
+      text-align: center;
+      font-size: 1rem;
+      color: #1f4e79;
+      @media (max-width: 1024px) {
+        font-size: 1.1rem;
+      }
+      @media (max-width: 600px) {
+        font-size: 1.05rem;
+      }
+    }
+    .loginForm {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 1rem 0;
+      .textfield {
+        width: 95%;
+        border: none;
+        height: 2.5rem;
+        margin: 0.5rem 1rem;
+        padding: 0 1rem;
+        border: 1px solid #97aabd;
+        font-size: 0.9rem;
+        &:focus {
+          outline: none;
+        }
+        @media (max-width: 1024px) {
+          height: 2.5rem;
+        }
+        @media (max-width: 600px) {
+          height: 2rem;
+          font-size: 0.8rem;
+          padding: 0 0.5rem;
+        }
+      }
+      .loginButton {
+        margin: 1rem 0;
+        height: 2.5rem;
+        width: 100%;
+        background-color: #10365a;
+        color: white;
+        font-size: 1.05rem;
+        text-transform: none;
+        border-radius: 5px;
+        padding-left: 1rem;
+        transition: transform 0.3s ease;
+        &:hover {
+          transform: scale(1.05);
+        }
+        @media (max-width: 1024px) {
+          height: 2.5rem;
+          border-radius: 10px;
+        }
+        @media (max-width: 600px) {
+          height: 2rem;
+          font-size: 0.8rem;
+          border-radius: 8px;
+        }
+      }
+    }
+    .promptLine {
+      margin: 2rem 0;
+      font-size: 0.9rem;
+      color: #1f4e79;
+      @media (max-width: 1024px) {
+        font-size: 0.8rem;
+      }
+      .linkText {
+        color: #1f4e79;
+        text-underline-position: under;
+        font-size: 1rem;
+        @media (max-width: 600px) {
+          font-size: 0.8rem;
+        }
+      }
+    }
+    .forgot {
+      margin: 2rem 0;
+      display: flex;
+      justify-content: space-around;
+      .forgotLink {
+        font-size: 0.7rem;
+        color: #1f4e79;
+        @media (max-width: 600px) {
+          font-size: 0.6rem;
+        }
+      }
+    }
+    .tnc {
+      font-size: 0.7rem;
+      @media (max-width: 600px) {
+        font-size: 0.6rem;
+      }
+      .tncLink {
+        color: #1f4e79;
+        cursor: pointer;
+        text-decoration: underline;
+        text-underline-position: under;
+      }
+    }
+  }
+}

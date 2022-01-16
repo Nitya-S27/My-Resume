@@ -1,0 +1,182 @@
+.signupWrapper {
+  text-align: center;
+  font-family: "Poppins";
+  background-color: #1f4e79;
+  min-height: 110vh;
+  @media (max-width: 600px) {
+    padding-bottom: 2rem;
+  }
+  .logoDiv {
+    padding: 1rem 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .backArrowDiv {
+      position: absolute;
+      left: 3rem;
+      border-radius: 100%;
+      @media (max-width: 600px) {
+        left: 1rem;
+      }
+      &:hover {
+        background-color: #1a4063;
+      }
+      .btn {
+        // color: #1f4e79;
+        color: white;
+        height: 1.5rem;
+      }
+      .text {
+        font-size: 1.2rem;
+        color: white;
+      }
+    }
+    .logoImage {
+      width: 18%;
+      @media (max-width: 1024px) {
+        width: 35%;
+      }
+      @media (max-width: 600px) {
+        width: 50%;
+      }
+    }
+  }
+  .formDiv {
+    margin: 1rem auto;
+    width: 35%;
+    @media (max-width: 1024px) {
+      width: 55%;
+    }
+    @media (max-width: 600px) {
+      width: 80%;
+    }
+    // text-align: left;
+
+    .signupForm {
+      margin: 1rem 0;
+      background-color: white;
+      border-radius: 5px;
+      padding: 1.5rem 1rem 0 1rem;
+      @media (max-width: 600px) {
+        padding: 1rem 0.5rem;
+      }
+      .formHeader {
+        text-align: center;
+        font-size: 1.05rem;
+        color: #1f4e79;
+        padding: 0.5rem 0;
+        @media (max-width: 1024px) {
+          font-size: 1.1rem;
+        }
+        @media (max-width: 600px) {
+          font-size: 1.05rem;
+        }
+      }
+      .row {
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 600px) {
+          flex-direction: column;
+        }
+        .col {
+          width: 100%;
+          padding: 0 1rem;
+          display: flex;
+          flex-direction: column;
+          // align-items: center;
+          @media (max-width: 600px) {
+            width: 85%;
+            margin: 0 auto;
+          }
+          .text {
+            font-size: 0.7rem;
+            text-align: left;
+            margin-top: 0.5rem;
+            margin-bottom: -0.5rem;
+            // margin-left: -25%;
+          }
+          .select {
+            background-color: white;
+            border-radius: 0px;
+            height: 2rem;
+            border: 1px solid #97aabd;
+            margin-left: 0;
+            .select2 {
+              height: 2rem;
+              border-radius: 0px;
+              background-color: white;
+              font-size: 0.9rem;
+              padding-bottom: 10px;
+              text-align: left;
+            }
+          }
+        }
+        .textfield {
+          width: 100%;
+          border: 1px solid #97aabd;
+          height: 2rem;
+          margin: 0.5rem 1rem;
+          padding: 0 0.5rem;
+          font-size: 0.8rem;
+          &:focus {
+            outline: none;
+          }
+          @media (max-width: 1024px) {
+            height: 2.5rem;
+            // border-radius: 10px;
+          }
+          @media (max-width: 600px) {
+            width: 80%;
+            height: 2rem;
+            font-size: 0.8rem;
+            margin: 0.5rem auto;
+            padding: 0 0.5rem;
+          }
+        }
+        .select {
+          margin: 0.5rem 1rem;
+          background-color: white;
+          border-radius: 0px;
+          height: 2rem;
+          border: none;
+          border: 1px solid #97aabd;
+
+          .select2 {
+            height: 2rem;
+            border-radius: 0px;
+            // border: 1px solid #97aabd;
+            background-color: white;
+            font-size: 0.9rem;
+            padding-bottom: 10px;
+            text-align: left;
+          }
+        }
+      }
+      .signupButton {
+        margin: 1rem 0;
+        height: 2.5rem;
+        width: 92%;
+        background-color: #1f4e79;
+        color: white;
+        font-size: 1.05rem;
+        text-transform: none;
+        border-radius: 5px;
+        padding-left: 1rem;
+        transition: transform 0.3s ease;
+        &:hover {
+          transform: scale(1.05);
+        }
+        @media (max-width: 1024px) {
+          height: 2.5rem;
+          border-radius: 10px;
+        }
+        @media (max-width: 600px) {
+          height: 2rem;
+          font-size: 1rem;
+          border-radius: 5px;
+          width: 85%;
+        }
+      }
+    }
+  }
+}
